@@ -6,10 +6,12 @@ Thumbs.db
 .idea
 *.sublime*
 .vscode
+.vs
 
 # Вспомогательные файлы
 *.log*
 node_modules/
+.vs/
 
 # Собранные файлы
 build/
