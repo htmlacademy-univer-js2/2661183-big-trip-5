@@ -1,4 +1,4 @@
-import { getRandomArrayElement, getRandomInteger } from '../utils.js';
+import {getRandomArrayElement, getRandomInteger} from '../utils/common.js';
 import { EVENT_TYPES, OFFERS } from '../const.js';
 
 const MIN_PRICE = 10;
@@ -6,9 +6,9 @@ const MAX_PRICE = 1000;
 
 function getRandomOffer() {
   return {
-    'type': getRandomArrayElement(EVENT_TYPES),
-    'title': getRandomArrayElement(OFFERS),
-    'price': getRandomInteger(MIN_PRICE, MAX_PRICE),
+    type: getRandomArrayElement(EVENT_TYPES),
+    title: getRandomArrayElement(OFFERS),
+    price: getRandomInteger(MIN_PRICE, MAX_PRICE),
   };
 }
 
