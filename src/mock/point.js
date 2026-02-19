@@ -1,4 +1,5 @@
-import { getRandomArrayElement, getRandomInteger, getTwoRandomDates } from '../utils.js';
+import {getRandomArrayElement, getRandomInteger} from '../utils/common.js';
+import {getTwoRandomDates} from '../utils/point.js';
 import { EVENT_TYPES } from '../const.js';
 import { getRandomDestination } from './destination.js';
 import { getRandomOffer } from './offer.js';
@@ -12,6 +13,7 @@ const getRandomPoint = () => {
   const dates = getTwoRandomDates();
 
   return {
+    id: crypto.randomUUID(),
     eventType: getRandomArrayElement(EVENT_TYPES),
     destination: getRandomDestination(),
     startDatetime: dates[0],
